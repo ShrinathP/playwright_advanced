@@ -1,0 +1,18 @@
+{
+  "name": "playwright_advanced",
+  "version": "1.0.0",
+  "description": "Last Version of Playwright supporting nodejs 16 @playwright/test@1.40.1 Install full Playwright package with browser binaries npm init playwright@1.40.1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test",
+    "test1": "BROWSER_PATH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' npx playwright test tests-customlauncher/example.spec.js --project=chromium --headed",
+    "setuptest": "BROWSER_PATH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' npx playwright test tests-customlauncher/setuptests/example2.spec.js --project=chromium --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.35.1"
+  }
+}
